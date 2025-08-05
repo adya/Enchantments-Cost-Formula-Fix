@@ -1,8 +1,9 @@
 #include "Hooks.h"
 
-void MessageHandler(SKSE::MessagingInterface::Message* a_message) {
+void MessageHandler(SKSE::MessagingInterface::Message* a_message)
+{
 	switch (a_message->type) {
-	case SKSE::MessagingInterface::kPostLoad:	
+	case SKSE::MessagingInterface::kPostLoad:
 		EPFF::Install();
 		break;
 	case SKSE::MessagingInterface::kPostPostLoad:
@@ -31,7 +32,8 @@ extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	return v;
 }();
 #else
-extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Query(const SKSE::QueryInterface* a_skse, SKSE::PluginInfo* a_info) {
+extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Query(const SKSE::QueryInterface* a_skse, SKSE::PluginInfo* a_info)
+{
 	a_info->infoVersion = SKSE::PluginInfo::kVersion;
 	a_info->name = "EnchantingPriceFormulaFix";
 	a_info->version = Version::MAJOR;
