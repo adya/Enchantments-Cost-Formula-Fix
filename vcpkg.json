@@ -1,0 +1,14 @@
+{
+  "name": "ecff",
+  "version-string": "2.0.0",
+  "description": "A mod that makes enchanting price scale with Player's skill level.",
+  "homepage": "https://github.com/adya/Enchantments-Cost-Formula-Fix",
+  "license": "MIT",
+  "builtin-baseline": "b545373a9a536dc559dac8583467a21497a0e897",
+  "dependencies": [
+    "boost-stl-interfaces",
+    "rsm-binary-io",
+    "spdlog",
+    "xbyak"
+  ]
+}
