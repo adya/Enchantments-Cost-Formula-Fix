@@ -1,6 +1,6 @@
 #pragma once
 
-namespace EPFF
+namespace ECFF
 {
 	void Install();
 }

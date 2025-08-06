@@ -4,7 +4,7 @@ void MessageHandler(SKSE::MessagingInterface::Message* a_message)
 {
 	switch (a_message->type) {
 	case SKSE::MessagingInterface::kPostLoad:
-		EPFF::Install();
+		ECFF::Install();
 		break;
 	case SKSE::MessagingInterface::kPostPostLoad:
 		break;
@@ -23,7 +23,7 @@ void MessageHandler(SKSE::MessagingInterface::Message* a_message)
 extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	SKSE::PluginVersionData v;
 	v.PluginVersion(Version::MAJOR);
-	v.PluginName("EnchantingPriceFormulaFix");
+	v.PluginName("EnchantingCostFormulaFix");
 	v.AuthorName("sasnikol");
 	v.UsesAddressLibrary();
 	v.UsesUpdatedStructs();
@@ -35,7 +35,7 @@ extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Query(const SKSE::QueryInterface* a_skse, SKSE::PluginInfo* a_info)
 {
 	a_info->infoVersion = SKSE::PluginInfo::kVersion;
-	a_info->name = "EnchantingPriceFormulaFix";
+	a_info->name = "EnchantingCostFormulaFix";
 	a_info->version = Version::MAJOR;
 
 	if (a_skse->IsEditor()) {

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace EPFF::Settings
+namespace ECFF::Settings
 {
 	inline float fEnchantingSkillCostBase()
 	{
